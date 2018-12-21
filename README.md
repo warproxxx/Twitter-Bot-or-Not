@@ -33,13 +33,15 @@ If you do this manually you will require data in this format:
 
 2) Then you will need a list of bot accounts i obtained mine from https://botsentinel.com/ I cannot provide the data here as they require payment for their data but i can privately provide it to you if you are a researcher.  Paste the file you obtain from there inside "data/bot_detection" folder. If you use other sources of data, you will have to modify the notebooks accordingly. 
 
-3) Select some top n tweets (I chose 15000) and use the file to obtain bot or not data from Botometer (botometer_api.py does this). To obtain the top tweets from live data, you will have to count the number of times the tweet was retweeted (in the given dataset) or use the scraper i mentioned.
+3) The data obtained from Bot Sentinal only contains account ID. You can obtain account username from ID using this repo https://github.com/warproxxx/Twitter-Account-ID-to-Username-Converter
 
-4) Now you have tweets created by bots or non bots. Insted of Botometer you can manually classify for your requirement.
+4) Select some top n tweets (I chose 15000) and use the file to obtain bot or not data from Botometer (botometer_api.py does this). To obtain the top tweets from live data, you will have to count the number of times the tweet was retweeted (in the given dataset) or use the scraper i mentioned.
 
-4) Convert the tweets to required format using "Tweet based data cleaning" notebook. You will have to modify your path directory.
+5) Now you have tweets created by bots or non bots. Insted of Botometer you can manually classify for your requirement.
 
-3) Then you can use the notebooks for bot detection models based on account data or tweet data. I obtained an accuracy of around 80%. You can improve that by algorithm mentioned in https://arxiv.org/abs/1802.04289 like Synthetic Minority Data Oversampling algorithm.
+6) Convert the tweets to required format using "Tweet based data cleaning" notebook. You will have to modify your path directory.
+
+7) Then you can use the notebooks for bot detection models based on account data or tweet data. I obtained an accuracy of around 80%. You can improve that by algorithm mentioned in https://arxiv.org/abs/1802.04289 like Synthetic Minority Data Oversampling algorithm.
 
 
 
