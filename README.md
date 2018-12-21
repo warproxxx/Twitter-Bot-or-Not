@@ -1,7 +1,7 @@
 # Twitter-Bot-Or-Not
 Uses Data during the US Midterm Election 2018 to determine if a twitter account/tweet is created by a trollbot or not.
 
-Based on https://arxiv.org/abs/1707.00086
+Based on https://arxiv.org/abs/1707.00086 by Emilio Ferrara (who has written a [series of brilliant papers](https://scholar.google.com/citations?user=0r7Syh0AAAAJ&hl=en&oi=ao) on Bots)
 
 This repository uses Bot and Human data obtained by using [Botometer](https://botometer.iuni.iu.edu/#!/) and [Bot Sentinal](https://botsentinel.com/) to train a neural network that can detect whether or not the given twitter account is a trollbot or not. Botometer API is free but takes time while to obtain the bot data set from Bot Sentinal require at least 5$ donation in their [gofundme](https://www.gofundme.com/bot-sentinel) you can insted use other sources of data like manual classification or these.
 
